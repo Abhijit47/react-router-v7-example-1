@@ -1,11 +1,12 @@
 import { reactRouter } from '@react-router/dev/vite';
 import tailwindcss from '@tailwindcss/vite';
+// import autoprefixer from 'autoprefixer';
 // import path from 'path';
 import { reactRouterDevTools } from 'react-router-devtools';
 import { defineConfig, loadEnv } from 'vite';
 import tsconfigPaths from 'vite-tsconfig-paths';
 // ↓ add this
-// import netlifyPlugin from '@netlify/vite-plugin-react-router';
+import netlifyPlugin from '@netlify/vite-plugin-react-router';
 
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '');
@@ -19,7 +20,7 @@ export default defineConfig(({ mode }) => {
       tailwindcss(),
       reactRouter(),
       tsconfigPaths(),
-      // netlifyPlugin(), // ← add this
+      netlifyPlugin(), // ← add this
     ],
 
     // resolve: {
