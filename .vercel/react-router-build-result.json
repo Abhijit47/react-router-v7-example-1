@@ -1,0 +1,330 @@
+{
+  "buildManifest": {
+    "serverBundles": {
+      "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0": {
+        "id": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+        "file": "build/server/nodejs-eyJydW50aW1lIjoibm9kZWpzIn0/index.js",
+        "config": {
+          "runtime": "nodejs"
+        }
+      }
+    },
+    "routeIdToServerBundleId": {
+      "root": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/home": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/about": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/contact-us": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/countries": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/country": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/blogs": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/blog": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/new-blog": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/edit-blog": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/recipes": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/recipe": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/admin/dashboard-home": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/admin/settings": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/admin/projects": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/admin/users": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/auth/sign-in": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/auth/sign-up": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0"
+    },
+    "routes": {
+      "root": {
+        "path": "",
+        "id": "root",
+        "file": "app/root.tsx",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "layouts/app-layout": {
+        "id": "layouts/app-layout",
+        "parentId": "root",
+        "file": "app/layouts/app-layout.tsx",
+        "config": {}
+      },
+      "routes/home": {
+        "id": "routes/home",
+        "parentId": "layouts/app-layout",
+        "file": "app/routes/home.tsx",
+        "path": "/",
+        "index": true,
+        "config": {}
+      },
+      "routes/about": {
+        "id": "routes/about",
+        "parentId": "layouts/app-layout",
+        "file": "app/routes/about.tsx",
+        "path": "/about",
+        "config": {}
+      },
+      "routes/contact-us": {
+        "id": "routes/contact-us",
+        "parentId": "layouts/app-layout",
+        "file": "app/routes/contact-us.tsx",
+        "path": "/contact-us",
+        "config": {}
+      },
+      "routes/countries": {
+        "id": "routes/countries",
+        "parentId": "layouts/app-layout",
+        "file": "app/routes/countries.tsx",
+        "path": "/countries",
+        "index": true,
+        "config": {}
+      },
+      "routes/country": {
+        "id": "routes/country",
+        "parentId": "layouts/app-layout",
+        "file": "app/routes/country.tsx",
+        "path": "/countries/:countryName",
+        "config": {}
+      },
+      "routes/blogs": {
+        "id": "routes/blogs",
+        "parentId": "layouts/app-layout",
+        "file": "app/routes/blogs.tsx",
+        "path": "/blogs",
+        "index": true,
+        "config": {}
+      },
+      "routes/blog": {
+        "id": "routes/blog",
+        "parentId": "layouts/app-layout",
+        "file": "app/routes/blog.tsx",
+        "path": "/blogs/:blogId",
+        "config": {}
+      },
+      "routes/new-blog": {
+        "id": "routes/new-blog",
+        "parentId": "layouts/app-layout",
+        "file": "app/routes/new-blog.tsx",
+        "path": "/blogs/new",
+        "config": {}
+      },
+      "routes/edit-blog": {
+        "id": "routes/edit-blog",
+        "parentId": "layouts/app-layout",
+        "file": "app/routes/edit-blog.tsx",
+        "path": "/blogs/edit/:blogId",
+        "config": {}
+      },
+      "routes/recipes": {
+        "id": "routes/recipes",
+        "parentId": "layouts/app-layout",
+        "file": "app/routes/recipes.tsx",
+        "path": "/recipes",
+        "index": true,
+        "config": {}
+      },
+      "routes/recipe": {
+        "id": "routes/recipe",
+        "parentId": "layouts/app-layout",
+        "file": "app/routes/recipe.tsx",
+        "path": "/recipes/:recipeId",
+        "config": {}
+      },
+      "layouts/admin-layout": {
+        "id": "layouts/admin-layout",
+        "parentId": "root",
+        "file": "app/layouts/admin-layout.tsx",
+        "config": {}
+      },
+      "routes/admin/dashboard-home": {
+        "id": "routes/admin/dashboard-home",
+        "parentId": "layouts/admin-layout",
+        "file": "app/routes/admin/dashboard-home.tsx",
+        "path": "admin/dashboard",
+        "config": {}
+      },
+      "routes/admin/settings": {
+        "id": "routes/admin/settings",
+        "parentId": "layouts/admin-layout",
+        "file": "app/routes/admin/settings.tsx",
+        "path": "admin/settings",
+        "config": {}
+      },
+      "routes/admin/projects": {
+        "id": "routes/admin/projects",
+        "parentId": "layouts/admin-layout",
+        "file": "app/routes/admin/projects.tsx",
+        "path": "admin/projects",
+        "config": {}
+      },
+      "routes/admin/users": {
+        "id": "routes/admin/users",
+        "parentId": "layouts/admin-layout",
+        "file": "app/routes/admin/users.tsx",
+        "path": "admin/users",
+        "config": {}
+      },
+      "layouts/auth-layout": {
+        "id": "layouts/auth-layout",
+        "parentId": "root",
+        "file": "app/layouts/auth-layout.tsx",
+        "config": {}
+      },
+      "routes/auth/sign-in": {
+        "id": "routes/auth/sign-in",
+        "parentId": "layouts/auth-layout",
+        "file": "app/routes/auth/sign-in.tsx",
+        "path": "auth/sign-in",
+        "config": {}
+      },
+      "routes/auth/sign-up": {
+        "id": "routes/auth/sign-up",
+        "parentId": "layouts/auth-layout",
+        "file": "app/routes/auth/sign-up.tsx",
+        "path": "auth/sign-up",
+        "config": {}
+      }
+    }
+  },
+  "reactRouterConfig": {
+    "appDirectory": "D:/React/react-router-v7/app",
+    "basename": "/",
+    "buildDirectory": "D:/React/react-router-v7/build",
+    "future": {
+      "unstable_optimizeDeps": false,
+      "unstable_splitRouteModules": true,
+      "unstable_viteEnvironmentApi": false
+    },
+    "routes": {
+      "root": {
+        "path": "",
+        "id": "root",
+        "file": "root.tsx"
+      },
+      "layouts/app-layout": {
+        "id": "layouts/app-layout",
+        "parentId": "root",
+        "file": "./layouts/app-layout.tsx"
+      },
+      "routes/home": {
+        "id": "routes/home",
+        "parentId": "layouts/app-layout",
+        "file": "./routes/home.tsx",
+        "path": "/",
+        "index": true
+      },
+      "routes/about": {
+        "id": "routes/about",
+        "parentId": "layouts/app-layout",
+        "file": "./routes/about.tsx",
+        "path": "/about"
+      },
+      "routes/contact-us": {
+        "id": "routes/contact-us",
+        "parentId": "layouts/app-layout",
+        "file": "routes/contact-us.tsx",
+        "path": "/contact-us"
+      },
+      "routes/countries": {
+        "id": "routes/countries",
+        "parentId": "layouts/app-layout",
+        "file": "./routes/countries.tsx",
+        "path": "/countries",
+        "index": true
+      },
+      "routes/country": {
+        "id": "routes/country",
+        "parentId": "layouts/app-layout",
+        "file": "routes/country.tsx",
+        "path": "/countries/:countryName"
+      },
+      "routes/blogs": {
+        "id": "routes/blogs",
+        "parentId": "layouts/app-layout",
+        "file": "./routes/blogs.tsx",
+        "path": "/blogs",
+        "index": true
+      },
+      "routes/blog": {
+        "id": "routes/blog",
+        "parentId": "layouts/app-layout",
+        "file": "routes/blog.tsx",
+        "path": "/blogs/:blogId"
+      },
+      "routes/new-blog": {
+        "id": "routes/new-blog",
+        "parentId": "layouts/app-layout",
+        "file": "routes/new-blog.tsx",
+        "path": "/blogs/new"
+      },
+      "routes/edit-blog": {
+        "id": "routes/edit-blog",
+        "parentId": "layouts/app-layout",
+        "file": "routes/edit-blog.tsx",
+        "path": "/blogs/edit/:blogId"
+      },
+      "routes/recipes": {
+        "id": "routes/recipes",
+        "parentId": "layouts/app-layout",
+        "file": "./routes/recipes.tsx",
+        "path": "/recipes",
+        "index": true
+      },
+      "routes/recipe": {
+        "id": "routes/recipe",
+        "parentId": "layouts/app-layout",
+        "file": "routes/recipe.tsx",
+        "path": "/recipes/:recipeId"
+      },
+      "layouts/admin-layout": {
+        "id": "layouts/admin-layout",
+        "parentId": "root",
+        "file": "./layouts/admin-layout.tsx"
+      },
+      "routes/admin/dashboard-home": {
+        "id": "routes/admin/dashboard-home",
+        "parentId": "layouts/admin-layout",
+        "file": "routes/admin/dashboard-home.tsx",
+        "path": "admin/dashboard"
+      },
+      "routes/admin/settings": {
+        "id": "routes/admin/settings",
+        "parentId": "layouts/admin-layout",
+        "file": "routes/admin/settings.tsx",
+        "path": "admin/settings"
+      },
+      "routes/admin/projects": {
+        "id": "routes/admin/projects",
+        "parentId": "layouts/admin-layout",
+        "file": "routes/admin/projects.tsx",
+        "path": "admin/projects"
+      },
+      "routes/admin/users": {
+        "id": "routes/admin/users",
+        "parentId": "layouts/admin-layout",
+        "file": "routes/admin/users.tsx",
+        "path": "admin/users"
+      },
+      "layouts/auth-layout": {
+        "id": "layouts/auth-layout",
+        "parentId": "root",
+        "file": "./layouts/auth-layout.tsx"
+      },
+      "routes/auth/sign-in": {
+        "id": "routes/auth/sign-in",
+        "parentId": "layouts/auth-layout",
+        "file": "routes/auth/sign-in.tsx",
+        "path": "auth/sign-in"
+      },
+      "routes/auth/sign-up": {
+        "id": "routes/auth/sign-up",
+        "parentId": "layouts/auth-layout",
+        "file": "routes/auth/sign-up.tsx",
+        "path": "auth/sign-up"
+      }
+    },
+    "serverBuildFile": "index.js",
+    "serverModuleFormat": "esm",
+    "ssr": true
+  },
+  "viteConfig": {
+    "build": {
+      "assetsDir": "assets"
+    }
+  }
+}
