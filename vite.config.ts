@@ -1,6 +1,6 @@
 import { reactRouter } from '@react-router/dev/vite';
 import tailwindcss from '@tailwindcss/vite';
-import path from 'path';
+// import path from 'path';
 import { reactRouterDevTools } from 'react-router-devtools';
 import { defineConfig, loadEnv } from 'vite';
 import tsconfigPaths from 'vite-tsconfig-paths';
@@ -22,11 +22,11 @@ export default defineConfig(({ mode }) => {
       // netlifyPlugin(), // ← add this
     ],
 
-    resolve: {
-      alias: {
-        '@': path.resolve(__dirname, './src'),
-      },
-    },
+    // resolve: {
+    //   alias: {
+    //     '@': path.resolve(__dirname, './src'),
+    //   },
+    // },
 
     build: {
       cssCodeSplit: true,
