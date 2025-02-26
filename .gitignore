@@ -4,3 +4,10 @@
 # React Router
 /.react-router/
 /build/
+
+.netlify
+.dockerignore
+
+.env
+
+/docs
