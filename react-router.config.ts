@@ -7,7 +7,7 @@ export default {
   ssr: true,
   // presets: [vercelPreset()],
   // specific paths
-  prerender: ['/', '/about', '/contact-us'],
+  // prerender: ['/', '/about', '/contact-us'],
   future: {
     unstable_splitRouteModules: true,
   },
